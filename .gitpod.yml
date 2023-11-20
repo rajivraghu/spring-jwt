@@ -1,0 +1,10 @@
+image:
+  file: Dockerfile
+
+tasks:
+  - init: ./mvnw install -DskipTests=false
+    command: echo "JDK 17 environment is ready!"
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
